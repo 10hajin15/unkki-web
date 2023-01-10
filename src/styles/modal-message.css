@@ -1,0 +1,159 @@
+
+
+.message-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.message-modal button {
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
+.message-modal section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  height: 680px;
+  margin: 0 auto;
+  background-color: #D9918B;
+  animation: modal-show 0.3s;
+  overflow: hidden;
+}
+
+.message-modal-area {
+  width: 100%;
+  max-width: 400px;
+  height: 580px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.message-modal-header {
+  margin: 5px 0px;
+}
+
+.message-modal-close {
+  position: absolute;
+  color: #707070;
+  margin-left: 160px;
+  background-color: transparent;
+  font-size: 25px;
+  font-family: 'KNPSKkomi-Regular00';
+}
+
+.message-modal-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.send-message-unkki {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.unkki-img-button {
+  background-color: #BF463B;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  font-family: 'KNPSKkomi-Regular00';
+  color: white;
+  text-align: center;
+}
+
+.send-message-unkki-img {
+  width: 290px;
+  height: 208px;
+}
+
+.send-message-text {
+  width: 370px;
+  height: 280px;
+  border: 0.1px solid #707070;
+  font-family: 'KNPSKkomi-Regular00';
+  color: #707070;
+  padding: 17px 20px;
+  font-size: 17px;
+  line-height: 150%;
+  margin-bottom: 5px;
+}
+
+.send-message-text::placeholder {
+  color: #BCBCBC;
+}
+
+.writer-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+
+.writer-area > span {
+  margin-top: 1px;
+  margin-left: 5px;
+  font-size: 18px;
+  color: #707070;
+}
+
+.message-writer {
+  width: 200px;
+  border: none;
+  font-family: 'KNPSKkomi-Regular00';
+  font-size: 18px;
+  color: #707070;
+  text-align: right;
+}
+
+.message-writer::placeholder {
+  color: #BCBCBC;
+}
+
+.send-message-button {
+  background-color: #F2EFEB;
+  margin-top: 13px;
+  width: 107px;
+  height: 43px;
+  border-radius: 30px;
+  font-family: 'KNPSKkomi-Regular00';
+  font-size: 18px;
+  color: #D9918B;
+}
+
+.message-modal.message-modal-openModal {
+  display: flex;
+  align-items: center;
+  animation: modal-bg-show 0.3s;
+}
+
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,44 @@
+.letters-layout {
+  width: 500px;
+}
+
+.letters-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.letters-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 500px;
+  flex-wrap: wrap;
+}
+
+.letters-sub {
+  font-size: 23px;
+  color: #707070;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.letters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 166.664px;
+  height: 109.492px;
+}
+
+.letter-img {
+  width: 60%;
+  cursor: pointer;
+}
+
+.letter-nickname {
+  margin-top: -15px;
+  color: #A5A5A5;
+  font-size: 18px;
+}
+
