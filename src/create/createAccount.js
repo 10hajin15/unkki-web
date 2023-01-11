@@ -24,7 +24,7 @@ const CreateAccount = () => {
     }
     
     axios
-      .get('http://localhost:8080/confirmAccountId',
+      .get('http://52.78.60.246/confirmAccountId',
       {
         params: {
           account_id: accountId
