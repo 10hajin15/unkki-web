@@ -18,7 +18,7 @@ const CreateUnkki = () => {
   const [id, setId] = useState('');
 
   axios
-    .get("http://52.78.60.246/readRollingpaper",
+    .get("http://52.78.60.246:8080/readRollingpaper",
     {
       params: {
         account_id: accountId,

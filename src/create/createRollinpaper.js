@@ -33,7 +33,7 @@ const CreateRollingpaper = () => {
     }
 
     axios
-    .post("http://52.78.60.246/createAccountNRollingpaper", {
+    .post("http://52.78.60.246:8080/createAccountNRollingpaper", {
       account_id: `${accountId}`,
       account_pwd: `${accountPwd}`,
       rollingpaper_title: `${title}`,
