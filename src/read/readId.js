@@ -30,18 +30,17 @@ const ReadId = () => {
         let msg = successful ? "링크가 복사되었습니다." : "링크를 복사에 실패하였습니다.";
         alert.info(msg); 
       } catch (err) {
-        alert.warning('Was not possible to copy te text: ', err);
+        console.log('Was not possible to copy te text: ', err);
       }
       document.body.removeChild(textArea);
-      return;
-    }
-
-    navigator.clipboard.writeText(copyLink)
+    } else {
+      navigator.clipboard.writeText(copyLink)
       .then(() => {
         console.log("Success Copied!");
         alert("링크가 복사되었습니다.");
       })
-      .catch(() => console.log("Fail Copied!"))    
+      .catch(() => console.log("Fail Copied!")) 
+    }  
   };
 
   return (
