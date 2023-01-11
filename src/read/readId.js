@@ -28,9 +28,9 @@ const ReadId = () => {
       try {
         let successful = document.execCommand('copy');
         let msg = successful ? "링크가 복사되었습니다." : "링크를 복사에 실패하였습니다.";
-        alert.info(msg); 
+        alert(msg); 
       } catch (err) {
-        console.log('Was not possible to copy te text: ', err);
+        alert("링크를 복사에 실패하였습니다.");
       }
       document.body.removeChild(textArea);
     } else {
