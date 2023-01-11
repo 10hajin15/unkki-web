@@ -29,7 +29,7 @@ const ModalMessage = (props) => {
       } 
     })
     .then(function (response) {
-      console.log("ok");
+
     })
     .catch(function (error) {
       alert("메시지를 보낼 수 없습니다. 다시 한 번 시도해 주세요!");

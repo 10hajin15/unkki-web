@@ -42,7 +42,6 @@ const CreateRollingpaper = () => {
       letters: []
     })
     .then(function (response) {
-      console.log("ok");
       navigate("/createUnkki",{state:{account_id: accountId, account_pwd:accountPwd, title:title,subTitle:subTitle,exp:exp}});
     })
     .catch(function (error) {

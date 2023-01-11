@@ -32,7 +32,6 @@ const Read = () => {
       }
     })
     .then((result) => {
-      console.log("ok");
       navigate("/readId",
         { state:
           {

@@ -27,7 +27,7 @@ const SendMessage = () => {
       setExp(result.data.exp);
     })
     .catch(() => {
-      console.log("실패")
+      console.log("실패");
     })
   
   const [modalOpen, setModalOpen] = useState(false);

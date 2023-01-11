@@ -13,9 +13,7 @@ const ReadLetters = () => {
   const title = location.state.title;
   const exp = location.state.exp;
   const letters = location.state.letters;
-
-  console.log(letters);
-
+  
   const [modalOpen, setModalOpen] = useState(false);
   const [showLetters, setShowLetters] = useState({});
 
@@ -38,12 +36,28 @@ const ReadLetters = () => {
   const onCopyLinkClick = () => {
     let copyLink = `http://www.unkki.com/sendMessage?${id}`;
 
-    navigator.clipboard.writeText(copyLink)
+    if(typeof(navigator.clipboard)=='undefined') {
+      let textArea = document.createElement('textarea');
+      textArea.value = copyLink;
+      textArea.style.position = 'fixed';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        let successful = document.execCommand('copy');
+        let msg = successful ? "링크가 복사되었습니다." : "링크를 복사에 실패하였습니다.";
+        alert(msg);
+      } catch (err) {
+        alert("링크를 복사에 실패하였습니다.");
+      }
+      document.body.removeChild(textArea);
+    } else {
+      navigator.clipboard.writeText(copyLink)
       .then(() => {
-        console.log("Success Copied!");
         alert("링크가 복사되었습니다.");
       })
-      .catch(() => console.log("Fail Copied!"))    
+      .catch(() => console.log("Fail Copied!")) 
+    }     
   };
 
   return (

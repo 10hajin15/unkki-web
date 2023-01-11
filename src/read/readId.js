@@ -18,7 +18,6 @@ const ReadId = () => {
     let copyLink = `http://www.unkki.com/sendMessage?${id}`;
 
     if(typeof(navigator.clipboard)=='undefined') {
-      console.log('navigator.clilpboard');
       let textArea = document.createElement('textarea');
       textArea.value = copyLink;
       textArea.style.position = 'fixed';
@@ -28,7 +27,7 @@ const ReadId = () => {
       try {
         let successful = document.execCommand('copy');
         let msg = successful ? "링크가 복사되었습니다." : "링크를 복사에 실패하였습니다.";
-        alert(msg); 
+        alert(msg);
       } catch (err) {
         alert("링크를 복사에 실패하였습니다.");
       }
@@ -36,7 +35,6 @@ const ReadId = () => {
     } else {
       navigator.clipboard.writeText(copyLink)
       .then(() => {
-        console.log("Success Copied!");
         alert("링크가 복사되었습니다.");
       })
       .catch(() => console.log("Fail Copied!")) 
