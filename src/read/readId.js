@@ -17,6 +17,25 @@ const ReadId = () => {
   const onCopyLinkClick = () => {
     let copyLink = `http://www.unkki.com/sendMessage?${id}`;
 
+    if(typeof(navigator.clipboard)=='undefined') {
+      console.log('navigator.clilpboard');
+      let textArea = document.createElement('textarea');
+      textArea.value = copyLink;
+      textArea.style.position = 'fixed';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        let successful = document.execCommand('copy');
+        let msg = successful ? "링크가 복사되었습니다." : "링크를 복사에 실패하였습니다.";
+        alert.info(msg); 
+      } catch (err) {
+        alert.warning('Was not possible to copy te text: ', err);
+      }
+      document.body.removeChild(textArea);
+      return;
+    }
+
     navigator.clipboard.writeText(copyLink)
       .then(() => {
         console.log("Success Copied!");
