@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ModalMessage from "./modalMessage";
 import axios from "axios";
 import iconHomeImg from '../img/icon-home.png';
-import iconLinkImg from "../img/icon-link.png";
+import iconLetterImg from "../img/icon-letter.png";
 import streetLightImg from '../img/streetlight-off.png';
 import postImg from "../img/post-close.png";
 
@@ -53,7 +53,7 @@ const SendMessage = () => {
             </a>
             <a href="/createAccount">
               <div className="link-icon">
-                <img className="link-icon-image" src={iconLinkImg} alt="링크복사"></img>
+                <img className="link-icon-image" src={iconLetterImg} alt="나도만들기"></img>
               </div>
             </a>
           </div>

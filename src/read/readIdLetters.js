@@ -3,7 +3,7 @@ import { useLocation } from "react-router";
 import Modal from "./modalLetter";
 import iconHomeImg from '../img/icon-home.png';
 import iconLinkImg from "../img/icon-link.png";
-import iconLetterImg from "../img/icon-letter.png";
+import letterImg from "../img/letter.png";
 
 const ReadLetters = () => {
   const location = useLocation();
@@ -73,7 +73,7 @@ const ReadLetters = () => {
                 {
                   letters.map((value) => (
                   <div className="letters" key={value._id}>
-                    <img className="letter-img" onClick={() => {openModal(); onShowLetterButton(value._id);}} src={iconLetterImg} alt="편지"/>
+                    <img className="letter-img" onClick={() => {openModal(); onShowLetterButton(value._id);}} src={letterImg} alt="편지"/>
                     <span className="letter-nickname">{value.writer}</span>
                   </div>
                 ))

@@ -43,7 +43,7 @@ const Modal = (props) => {
                         />
                       )}
                     </div>
-                    <div>
+                    <div className="message-contents">
                       <div className="message-text">{messageContent}</div>
                       <div className="show-message-writer-area">
                         <span>{writer}</span>

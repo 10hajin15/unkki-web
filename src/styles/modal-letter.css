@@ -118,3 +118,115 @@
     opacity: 1;
   }
 }
+
+@media all and (max-width: 768px) {
+  .letter-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+  }
+  
+  .modal-letter-area {
+    width: 500px;
+    height: 600px;
+  }
+  
+  .letter-modal button {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+  }
+  .letter-modal section {
+    width: 90%;
+    max-width: 450px;
+    height: 560px;
+    margin: 0 auto;
+    border: 0.1px solid #707070;
+    border-radius: 1rem;
+    background-color: #fff;
+    animation: modal-show 0.3s;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .letter-modal-header {
+    margin: 7px 0px;
+  }
+  
+  .letter-modal-close {
+    color: #707070;
+    margin-left: 320px;
+    background-color: transparent;
+    font-size: 25px;
+    font-family: 'KNPSKkomi-Regular00';
+  }
+  
+  .letter-modal-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .message-unkki {
+    padding-bottom: 20px;
+    border-bottom: 0.1px solid #707070;
+  }
+  
+  .message-unkki-img {
+    width: 290px;
+    height: 208px;
+  }
+
+  .message-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .message-text {
+    height: 220px;
+    padding: 0;
+    padding-top: 15px;
+    color: #707070;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  
+  .show-message-writer-area {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+  
+  .letter-modal-main span {
+    margin-left: 3px;
+    color: #707070;
+  }
+  
+  .letter-modal.letter-modal-openModal {
+    display: flex;
+    align-items: center;
+    animation: modal-bg-show 0.3s;
+  }
+  
+  .save-letter {
+    width: 93px;
+    height: 45px;
+    background-color: #BF463B;
+    border-radius: 23px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'KNPSKkomi-Regular00';
+    font-size: 20px;
+  }
+  
+}

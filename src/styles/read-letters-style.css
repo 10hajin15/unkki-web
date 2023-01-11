@@ -19,7 +19,7 @@
   font-size: 23px;
   color: #707070;
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .letters {
@@ -37,8 +37,72 @@
 }
 
 .letter-nickname {
-  margin-top: -15px;
+  margin-top: 10px;
   color: #A5A5A5;
   font-size: 18px;
 }
 
+.rollingpaper-img-post-sub {
+  position: absolute;
+  padding-left: 300px;
+  padding-top: 100px;
+  color: #BF463B;
+  font-size: 25px;
+  animation: blink-effect 1s step-end 5;
+}
+
+@media all and (max-width: 768px) {
+  .letters-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .letters-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    flex-wrap: wrap;
+  }
+
+  .letters-layout {
+    width: 400px;
+  }
+  
+  .letters-sub {
+    font-size: 23px;
+    color: #707070;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .letters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 166.664px;
+    height: 109.492px;
+  }
+  
+  .letter-img {
+    width: 50%;
+    cursor: pointer;
+  }
+  
+  .letter-nickname {
+    margin-top: 5px;
+    color: #A5A5A5;
+    font-size: 18px;
+  }
+
+  .rollingpaper-img-post-sub {
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 100px;
+    color: #BF463B;
+    font-size: 25px;
+    animation: blink-effect 1s step-end 5;
+  }
+}

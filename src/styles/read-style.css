@@ -19,3 +19,29 @@
   border: none;
   cursor: pointer;
 }
+
+@media all and (max-width: 768px) {
+
+.read-title {
+  width: 200px;
+  height: 37px;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 32px;
+  color: #707070;
+}
+
+.click-post {
+  cursor: pointer;
+}
+
+.button-read-id {
+  font-family: 'KNPSKkomi-Regular00';
+  font-size: 25px;
+  color: white;
+  text-decoration-line: none;
+  border: none;
+  cursor: pointer;
+}
+
+}
