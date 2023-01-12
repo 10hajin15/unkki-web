@@ -18,7 +18,7 @@ const CreateUnkki = () => {
   const [id, setId] = useState('');
 
   axios
-    .get("http://52.78.60.246:8080/readRollingpaper",
+    .get("https://52.78.60.246:8080/readRollingpaper",
     {
       params: {
         account_id: accountId,
@@ -33,7 +33,7 @@ const CreateUnkki = () => {
     })
 
   const onCopyLinkClick = () => {
-    let copyLink = `http://www.unkki.com/sendMessage?${id}`;
+    let copyLink = `https://www.unkki.com/sendMessage?${id}`;
 
     if(typeof(navigator.clipboard)=='undefined') {
       let textArea = document.createElement('textarea');
