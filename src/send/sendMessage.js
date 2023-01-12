@@ -15,7 +15,7 @@ const SendMessage = () => {
   dbId = dbId.replace('?','');
   
   axios
-    .get('https://52.78.60.246:8080/sendMessage',
+    .get('http://52.78.60.246:8080/sendMessage',
     {
       params: {
         dbId: dbId
