@@ -15,7 +15,7 @@ const ReadId = () => {
   const letters = location.state.letters;
 
   const onCopyLinkClick = () => {
-    let copyLink = `https://www.unkki.com/sendMessage?${id}`;
+    let copyLink = `http://www.unkki.com/sendMessage?${id}`;
 
     if(typeof(navigator.clipboard)=='undefined') {
       let textArea = document.createElement('textarea');
