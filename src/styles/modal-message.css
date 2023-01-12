@@ -203,9 +203,9 @@
 .message-modal-close {
   position: absolute;
   color: #707070;
-  margin-left: 125px;
+  margin-left: 100px;
   background-color: transparent;
-  font-size: 25px;
+  font-size: 27px;
   font-family: 'KNPSKkomi-Regular00';
 }
 
@@ -221,17 +221,18 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .unkki-img-button {
   background-color: #BF463B;
-  width: 20px;
-  height: 20px;
-  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   font-family: 'KNPSKkomi-Regular00';
   color: white;
   text-align: center;
-  margin: 0 -15px;
+  margin: 0 -22px;
 }
 
 .send-message-unkki-img {
@@ -241,7 +242,7 @@
 
 .send-message-text {
   width: 260px;
-  height: 220px;
+  height: 230px;
   border: 0.1px solid #707070;
   font-family: 'KNPSKkomi-Regular00';
   color: #707070;
@@ -262,15 +263,17 @@
 }
 
 .writer-area > span {
-  margin-top: 1px;
+  margin-top: -2px;
   margin-left: 5px;
   font-size: 18px;
   color: #707070;
 }
 
 .message-writer {
+  margin-top: -7px;
   width: 200px;
   border: none;
+  background-color: transparent;
   font-family: 'KNPSKkomi-Regular00';
   font-size: 18px;
   color: #707070;

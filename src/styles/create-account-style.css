@@ -193,14 +193,14 @@
   
   .check-id-button {
     width: 94px;
-    height: 35px;
+    height: 40px;
     background-color: #BF463B;
     font-family: 'KNPSKkomi-Regular00';
     font-size: 20px;
     color: white;
     position: absolute;
     border: none;
-    border-radius: 17px;
+    border-radius: 20px;
     margin-left: -100px;
     margin-top: 5px;
     cursor: pointer;
