@@ -20,7 +20,7 @@ const ModalMessage = (props) => {
 
   const onSendMessageButtonClick = () => {
     axios
-    .post("http://52.78.60.246:8080/sendMessage", {
+    .post("https://52.78.60.246:8080/sendMessage", {
       _id: dbId,
       letters: {
         cardType: cardType,
