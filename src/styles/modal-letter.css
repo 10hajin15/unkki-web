@@ -69,6 +69,10 @@
 .message-text {
   color: #707070;
   padding-top: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 300px;
+  overflow: scroll;
   font-size: 20px;
   line-height: 150%;
 }
