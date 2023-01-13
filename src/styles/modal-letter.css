@@ -60,11 +60,17 @@
   height: 208px;
 }
 
+.message-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .message-text {
   width: 370px;
   height: 200px;
   color: #707070;
-  padding: 17px 20px;
+  padding-top: 17px;
   font-size: 20px;
   line-height: 150%;
 }
@@ -190,11 +196,10 @@
   }
   
   .message-text {
+    width: 350px;
     height: 220px;
     padding: 0;
     padding-top: 15px;
-    padding-left: 7px;
-    padding-right: 7px;
     color: #707070;
     font-size: 20px;
     line-height: 150%;
